@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
 import {ListShipments} from './Components/ListShipments';
-
+import ListOfShipmentsWithClass from './ListOfShipmentsWithClass';
 class App extends React.Component {
 
   constructor(props){
@@ -32,7 +32,7 @@ class App extends React.Component {
       <Container maxWidth="xm">
         <Box my={6}>
        <ListShipments shipments ={filtered} columns ={this.state.columns} />
-      
+      {/* <ListOfShipmentsWithClass shipments ={filtered}/> */}
         </Box>
       </Container>
     );
